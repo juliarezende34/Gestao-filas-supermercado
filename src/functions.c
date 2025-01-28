@@ -46,7 +46,7 @@ void inserirFila(Cliente ** fila){ //Passar com &
     }
 }
 
-void inserirFilaComNovo(Cliente ** fila, Cliente * novo){ //Passar com &
+void inserirFilaComNovo(Cliente ** fila, Cliente * novo){ 
     Cliente *aux;    
     novo->proximo = NULL;
 
@@ -66,7 +66,7 @@ void inserirFilaComNovo(Cliente ** fila, Cliente * novo){ //Passar com &
     }
 }
 
-void removerFila(Cliente ** fila){ //Passar com &
+void removerFila(Cliente ** fila){ 
     if(*fila == NULL){
         printf("A fila está vazia!\n");
     }
@@ -75,7 +75,7 @@ void removerFila(Cliente ** fila){ //Passar com &
     }
 }
 
-void imprimirFila(Cliente * fila){ //Passar sem &
+void imprimirFila(Cliente * fila){
     Cliente * aux = fila;
     int cont = 1;
     while(aux != NULL){

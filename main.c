@@ -14,7 +14,10 @@ int main(){
 
     while(op != 0){
         printf("\nDigite a opção desejada:\n[0] Sair\n[1] Cadastrar cliente\n[2] Atender cliente\n[3] Abrir ou fechar caixa\n[4] Imprimir clientes\n[5] Status dos caixas\n>");
-        scanf("%d", &op);
+        if(scanf("%d", &op) != 1){
+            printf("Opção inválida!\n");
+            break;
+        }
         switch(op){
             case 0:
                 system("clear");
